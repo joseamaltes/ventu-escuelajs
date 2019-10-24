@@ -1,12 +1,14 @@
 {
   "name": "ventu",
   "version": "0.1.0",
-  "private": true,
+  "description": "",
+  "main": "index.js",
   "dependencies": {
     "babel-eslint": "^10.0.2",
     "classnames": "^2.2.6",
     "eslint": "^6.0.1",
     "eslint-config-airbnb": "^17.1.1",
+    "eslint-loader": "^3.0.2",
     "eslint-plugin-import": "^2.18.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.2",
@@ -21,7 +23,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --open --mode development"
+    "start": "webpack-dev-server --open --mode development",
+    "format": "prettier --write '{*.js,src/**/*.{js,jsx}}'",
+    "lint": "eslint src/"
   },
   "keywords": [],
   "author": "",
