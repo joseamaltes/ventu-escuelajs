@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
  
-const Header = () => (
-<div className='Header'>
+const Header = () => {
+
+  return (
+    <div className='Header'>
   <div className='Header_superiorpart'>
     <div className='container'>
       <div className='Superior'>
@@ -18,5 +20,6 @@ const Header = () => (
 </div>
 
 );
+}
 
 export default Header;
