@@ -4,7 +4,7 @@
     "es6": true,
     "node": true
   },
-  "extends": ["airbnb"],
+  "extends": ["airbnb", "prettier", "prettier/react"],
   "globals": {
     "document": false,
     "escape": false,
@@ -18,6 +18,10 @@
     "sinon": true
   },
   "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": true
+  },
   "plugins": [
     "react",
     "jsx-a11y",

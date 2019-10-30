@@ -1,0 +1,13 @@
+.site--logo {
+    
+        text-transform: uppercase;
+        color: $gray-1;
+        letter-spacing: .2em;
+        font-size: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: 2px solid $gray-1;
+        &:hover {
+            text-decoration: none;
+        
+}
